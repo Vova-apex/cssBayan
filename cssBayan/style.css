@@ -1,0 +1,46 @@
+body {
+    background-color: #F6F6ED;
+    color: #370eef;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body :hover {
+    color: black;
+}
+
+h1 {
+    font-size: large;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+.bayan-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.bayan-input {
+    display: none;
+}
+
+.bayan-label {
+    padding: 0.1rem 0.5rem;
+    display: block;
+    align-self: start;
+    width: 100%;
+    cursor: pointer;
+    font-size: calc(1.5rem + 0.25vw);
+    transition: transform 100ms, background-color 100ms;
+    border-top: 0.1rem solid #eb6868;
+}
+
+img {
+    max-width: 0rem;
+    transition: max-width 500ms;
+    margin: 0 auto;
+    /* display: block;
+    width: 100%; */
+}
