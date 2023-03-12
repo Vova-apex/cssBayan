@@ -32,14 +32,19 @@
         
         span {
             display: block;
-            background-image: url(/cssBayan/img/plus-solid.svg);
+            background-image: url(/cssBayan/img/xmark-solid.svg);
             background-repeat: no-repeat;
             background-position: center;
-            width: calc(1rem + 0.75vw);
+            width: calc(.5rem);
             cursor: pointer;
             transform: rotate(45deg);
             transition: transform 500ms;
             margin-left: 0.5rem;
+        }
+        
+        .bayan-label>div {
+            display: flex;
+            justify-content: space-between;
         }
         
         .bayan-input:checked+.bayan-label img {
@@ -48,15 +53,26 @@
             margin: 1rem auto;
         }
         
+        input:checked~.bayan-label>div span {
+            transform: rotate(0deg);
+            transition: transform 500ms;
+        }
+        
         @media(any-hover: hover) {
             body :hover {
                 color: black;
             }
-            .bayan-label :hover,
             .bayan-label:hover>img {
                 display: block;
                 max-width: 5rem;
                 margin: 1rem auto;
+            }
+            label:hover>div span {
+                transform: rotate(0deg);
+                transition: transform 500ms;
+            }
+            .bayan-label :hover {
+                transform: scale(1.01);
             }
         }
         
