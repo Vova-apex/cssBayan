@@ -32,7 +32,7 @@
         
         span {
             display: block;
-            background-image: url(/cssBayan/img/xmark-solid.svg);
+            background-image: url(img/xmark-solid.svg);
             background-repeat: no-repeat;
             background-position: center;
             width: calc(.5rem);
